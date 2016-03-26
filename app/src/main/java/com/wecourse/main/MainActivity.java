@@ -8,10 +8,9 @@ import android.os.Bundle;
 import android.support.design.widget.TabLayout;
 import android.support.v13.app.FragmentPagerAdapter;
 import android.support.v4.view.ViewPager;
-import android.view.View;
 import android.widget.FrameLayout;
 
-import com.wecourse.dynamic_course.FragmentDynamic;
+import com.wecourse.dynamic_course.DynamicFragment;
 import com.wecourse.faxian.Faxian;
 
 public class MainActivity extends Activity implements BottomLayout.BottomLayoutOnClick {
@@ -110,7 +109,7 @@ public class MainActivity extends Activity implements BottomLayout.BottomLayoutO
 
         @Override
         public Fragment getItem(int position) {
-            return new FragmentDynamic();
+            return new DynamicFragment();
         }
 
         @Override

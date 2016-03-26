@@ -14,4 +14,14 @@
     <color name="colorTabLayoutBG">#3F51B5</color>
     <color name="colorBottomNO">#bfbfbf</color>
 
+    <!--
+    dynamic中ListView.item布局颜色
+    -->
+    <color name="colorBackGround">#ffffff</color>
+    <color name="colorInterval">#a9b7b7</color>
+    <color name="colorIntervalAlpha">#FFF5F5F5</color>
+    <color name="sp_one">#000000</color>
+    <color name="sp_two">#3e3e3e</color>
+
+
 </resources>

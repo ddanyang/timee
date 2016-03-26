@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackGround"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:background="@color/colorBackGround">
+
+        <ImageView
+            android:id="@+id/iv_head_picture"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="16dp"
+            android:background="#000000"
+            android:scaleType="centerCrop" />
+
+        <TextView
+            android:id="@+id/tv_user_nickname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/iv_head_picture"
+            android:layout_marginLeft="16dp"
+            android:layout_toRightOf="@id/iv_head_picture"
+            android:ellipsize="end"
+            android:lines="1"
+            android:text="测试用火狐"
+            android:textColor="@color/sp_one"
+            android:textSize="@dimen/sp_user_nickname" />
+
+        <TextView
+            android:id="@+id/tv_girl_or_boy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/iv_head_picture"
+            android:layout_marginLeft="4dp"
+            android:layout_marginTop="3dp"
+            android:layout_toRightOf="@id/tv_user_nickname"
+            android:background="@drawable/dynamic_boy_background"
+            android:paddingBottom="2dp"
+            android:paddingLeft="4dp"
+            android:paddingRight="4dp"
+            android:paddingTop="2dp"
+            android:text="jlkjs"
+            android:textSize="@dimen/sp_girl_boy_vip" />
+
+        <TextView
+            android:id="@+id/tv_vip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/iv_head_picture"
+            android:layout_marginLeft="4dp"
+            android:layout_marginTop="3dp"
+            android:layout_toRightOf="@id/tv_girl_or_boy"
+            android:background="@drawable/dynamic_vip_background"
+            android:paddingBottom="2dp"
+            android:paddingLeft="4dp"
+            android:paddingRight="4dp"
+            android:paddingTop="2dp"
+            android:text="jlkjs"
+            android:textSize="@dimen/sp_girl_boy_vip" />
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@id/iv_head_picture"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="2dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/dynamic_attention_no" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/tv_user_nickname"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="5dp"
+            android:text="1分钟前"
+            android:textSize="14sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_alignLeft="@id/tv_user_nickname"
+            android:layout_alignParentBottom="true"
+            android:layout_marginRight="16dp"
+            android:background="@color/colorIntervalAlpha" />
+    </RelativeLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"></FrameLayout>
+
+</LinearLayout>
