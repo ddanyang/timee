@@ -1,14 +1,18 @@
 package com.wecourse.main;
 
+import android.annotation.TargetApi;
 import android.content.Context;
 import android.graphics.Color;
 import android.graphics.drawable.Drawable;
+import android.os.Build;
 import android.util.AttributeSet;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
+
+import com.wecourse.DeviceInfo;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -19,11 +23,15 @@ import java.util.Map;
 public class BottomLayout extends LinearLayout {
 
     //该接口用于在实现对底部Button的监听
-    public interface BottomLayoutOnClick{
+    public interface BottomLayoutOnClick {
         public void bottom1NearOnClick();
+
         public void bottom2FaxianOnClick();
+
         public void bottom3XiaoxiOnClick();
+
         public void bottom4GuanzhuOnClick();
+
         public void bottom5GerenOnClick();
     }
 
@@ -33,12 +41,14 @@ public class BottomLayout extends LinearLayout {
         bottomLayoutLister = b;
     }
 
+    //设备版本号
+    final private int DEVICE_VERSION = DeviceInfo.DEVICE_VERSION;
     //定义元素
     private View bottom1Near, bottom2Faxian, bottom3Xiaoxi, bottom4Guanzhu, bottom5Geren;
     private ImageView bottom1NearBtn, bottom2FaxianBtn, bottom3XiaoxiBtn, bottom4GuanzhuBtn, bottom5GerenBtn;
     private TextView bottom1NearTv, bottom2FaxianTv, bottom3XiaoxiTv, bottom4GuanzhuTv, bottom5GerenTv;
     //Button中的Tag
-    Map<String,Drawable> map;
+    Map<String, Drawable> map;
     String no = "no";
     String yes = "yes";
     int colorno = Color.parseColor("#bfbfbf");
@@ -55,7 +65,8 @@ public class BottomLayout extends LinearLayout {
         this(context, attrs, 0);
     }
 
-    public BottomLayout(Context context, AttributeSet attrs, int defStyleAttr) {
+    @TargetApi(Build.VERSION_CODES.LOLLIPOP)
+    public BottomLayout(final Context context, AttributeSet attrs, int defStyleAttr) {
         super(context, attrs, defStyleAttr);
         setBackgroundColor(Color.parseColor("#ffffff"));
         LayoutInflater inflater = (LayoutInflater) context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
@@ -69,27 +80,47 @@ public class BottomLayout extends LinearLayout {
 
         //找到各个元素，并为其设置背景
         bottom1NearBtn = (ImageView) bottom1Near.findViewById(R.id.bottom1_near_btn);
-        map = new HashMap<String,Drawable>();
-        map.put(no, context.getResources().getDrawable(R.drawable.bottom1_near_no));
-        map.put(yes, context.getResources().getDrawable(R.drawable.bottom1_near_yes));
+        map = new HashMap<String, Drawable>();
+        if (DEVICE_VERSION >= Build.VERSION_CODES.LOLLIPOP) {
+            map.put(no, context.getDrawable(R.drawable.bottom4_guanzhu_no));
+            map.put(yes, context.getDrawable(R.drawable.bottom4_guanzhu_yes));
+        } else {
+            map.put(no, context.getResources().getDrawable(R.drawable.bottom4_guanzhu_no));
+            map.put(yes, context.getResources().getDrawable(R.drawable.bottom4_guanzhu_yes));
+        }
         bottom1NearBtn.setTag(map);
 
         bottom2FaxianBtn = (ImageView) bottom2Faxian.findViewById(R.id.bottom2_faxian_btn);
-        map = new HashMap<String,Drawable>();
-        map.put(no, context.getResources().getDrawable(R.drawable.bottom2_faxian_no));
-        map.put(yes, context.getResources().getDrawable(R.drawable.bottom2_faxian_yes));
+        map = new HashMap<String, Drawable>();
+        if (DEVICE_VERSION >= Build.VERSION_CODES.LOLLIPOP) {
+            map.put(no, context.getDrawable(R.drawable.bottom4_guanzhu_no));
+            map.put(yes, context.getDrawable(R.drawable.bottom4_guanzhu_yes));
+        } else {
+            map.put(no, context.getResources().getDrawable(R.drawable.bottom4_guanzhu_no));
+            map.put(yes, context.getResources().getDrawable(R.drawable.bottom4_guanzhu_yes));
+        }
         bottom2FaxianBtn.setTag(map);
 
         bottom3XiaoxiBtn = (ImageView) bottom3Xiaoxi.findViewById(R.id.bottom3_xiaoxi_btn);
-        map = new HashMap<String,Drawable>();
-        map.put(no, context.getResources().getDrawable(R.drawable.bottom3_xiaoxi_no));
-        map.put(yes, context.getResources().getDrawable(R.drawable.bottom3_xiaoxi_yes));
+        map = new HashMap<String, Drawable>();
+        if (DEVICE_VERSION >= Build.VERSION_CODES.LOLLIPOP) {
+            map.put(no, context.getDrawable(R.drawable.bottom4_guanzhu_no));
+            map.put(yes, context.getDrawable(R.drawable.bottom4_guanzhu_yes));
+        } else {
+            map.put(no, context.getResources().getDrawable(R.drawable.bottom4_guanzhu_no));
+            map.put(yes, context.getResources().getDrawable(R.drawable.bottom4_guanzhu_yes));
+        }
         bottom3XiaoxiBtn.setTag(map);
 
         bottom4GuanzhuBtn = (ImageView) bottom4Guanzhu.findViewById(R.id.bottom4_guanzhu_btn);
-        map = new HashMap<String,Drawable>();
-        map.put(no, context.getResources().getDrawable(R.drawable.bottom4_guanzhu_no));
-        map.put(yes, context.getResources().getDrawable(R.drawable.bottom4_guanzhu_yes));
+        map = new HashMap<String, Drawable>();
+        if (DEVICE_VERSION >= Build.VERSION_CODES.LOLLIPOP) {
+            map.put(no, context.getDrawable(R.drawable.bottom4_guanzhu_no));
+            map.put(yes, context.getDrawable(R.drawable.bottom4_guanzhu_yes));
+        } else {
+            map.put(no, context.getResources().getDrawable(R.drawable.bottom4_guanzhu_no));
+            map.put(yes, context.getResources().getDrawable(R.drawable.bottom4_guanzhu_yes));
+        }
         bottom4GuanzhuBtn.setTag(map);
 
 //        bottom5GerenBtn = (ImageView) bottom5Geren.findViewById(R.id.bottom5_geren_btn);
@@ -117,7 +148,11 @@ public class BottomLayout extends LinearLayout {
                 if (oldBtn != null && oldTv != null) {
                     if (!oldTv.getTag().equals(id)) {
                         map = (Map<String, Drawable>) oldBtn.getTag();
-                        oldBtn.setBackgroundDrawable(map.get(no));
+                        if (DEVICE_VERSION >= Build.VERSION_CODES.LOLLIPOP) {
+                            oldBtn.setBackground(map.get(no));
+                        } else {
+                            oldBtn.setBackgroundDrawable(map.get(no));
+                        }
                         oldTv.setTextColor(colorno);
                     } else {
                         return;
