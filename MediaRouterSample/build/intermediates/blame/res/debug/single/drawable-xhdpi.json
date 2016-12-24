@@ -1,0 +1,18 @@
+[
+    {
+        "merged": "D:\\oBian\\oooAndroidStudio\\WeAndYouWei\\MediaRouterSample\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\ic_action_pause.png",
+        "source": "D:\\oBian\\oooAndroidStudio\\WeAndYouWei\\MediaRouterSample\\src\\main\\res\\drawable-xhdpi\\ic_action_pause.png"
+    },
+    {
+        "merged": "D:\\oBian\\oooAndroidStudio\\WeAndYouWei\\MediaRouterSample\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\ic_launcher.png",
+        "source": "D:\\oBian\\oooAndroidStudio\\WeAndYouWei\\MediaRouterSample\\src\\main\\res\\drawable-xhdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "D:\\oBian\\oooAndroidStudio\\WeAndYouWei\\MediaRouterSample\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\ic_action_stop.png",
+        "source": "D:\\oBian\\oooAndroidStudio\\WeAndYouWei\\MediaRouterSample\\src\\main\\res\\drawable-xhdpi\\ic_action_stop.png"
+    },
+    {
+        "merged": "D:\\oBian\\oooAndroidStudio\\WeAndYouWei\\MediaRouterSample\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\ic_action_play.png",
+        "source": "D:\\oBian\\oooAndroidStudio\\WeAndYouWei\\MediaRouterSample\\src\\main\\res\\drawable-xhdpi\\ic_action_play.png"
+    }
+]

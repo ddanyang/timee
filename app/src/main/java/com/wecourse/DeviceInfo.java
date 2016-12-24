@@ -7,7 +7,8 @@ import android.os.Build;
  */
 public class DeviceInfo{
     //不可在任何地方修改值
-    public final static int DEVICE_VERSION = Build.VERSION.SDK_INT;
+    public final static int DEVICE_SDK_VERSION = Build.VERSION.SDK_INT;
+    public final static String DEVICE_VERSION = Build.MODEL;
 
     public static void init() {
     }

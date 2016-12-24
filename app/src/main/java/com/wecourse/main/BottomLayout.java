@@ -42,7 +42,7 @@ public class BottomLayout extends LinearLayout {
     }
 
     //设备版本号
-    final private int DEVICE_VERSION = DeviceInfo.DEVICE_VERSION;
+    final private int DEVICE_VERSION = DeviceInfo.DEVICE_SDK_VERSION;
     //定义元素
     private View bottom1Near, bottom2Faxian, bottom3Xiaoxi, bottom4Guanzhu, bottom5Geren;
     private ImageView bottom1NearBtn, bottom2FaxianBtn, bottom3XiaoxiBtn, bottom4GuanzhuBtn, bottom5GerenBtn;

@@ -1,0 +1,38 @@
+[
+    {
+        "merged": "D:\\oBian\\oooAndroidStudio\\WeAndYouWei\\MediaRouterSample\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi\\ic_menu_add.png",
+        "source": "D:\\oBian\\oooAndroidStudio\\WeAndYouWei\\MediaRouterSample\\src\\main\\res\\drawable-mdpi\\ic_menu_add.png"
+    },
+    {
+        "merged": "D:\\oBian\\oooAndroidStudio\\WeAndYouWei\\MediaRouterSample\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi\\ic_action_stop.png",
+        "source": "D:\\oBian\\oooAndroidStudio\\WeAndYouWei\\MediaRouterSample\\src\\main\\res\\drawable-mdpi\\ic_action_stop.png"
+    },
+    {
+        "merged": "D:\\oBian\\oooAndroidStudio\\WeAndYouWei\\MediaRouterSample\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi\\ic_menu_delete.png",
+        "source": "D:\\oBian\\oooAndroidStudio\\WeAndYouWei\\MediaRouterSample\\src\\main\\res\\drawable-mdpi\\ic_menu_delete.png"
+    },
+    {
+        "merged": "D:\\oBian\\oooAndroidStudio\\WeAndYouWei\\MediaRouterSample\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi\\ic_media_play.png",
+        "source": "D:\\oBian\\oooAndroidStudio\\WeAndYouWei\\MediaRouterSample\\src\\main\\res\\drawable-mdpi\\ic_media_play.png"
+    },
+    {
+        "merged": "D:\\oBian\\oooAndroidStudio\\WeAndYouWei\\MediaRouterSample\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi\\ic_action_play.png",
+        "source": "D:\\oBian\\oooAndroidStudio\\WeAndYouWei\\MediaRouterSample\\src\\main\\res\\drawable-mdpi\\ic_action_play.png"
+    },
+    {
+        "merged": "D:\\oBian\\oooAndroidStudio\\WeAndYouWei\\MediaRouterSample\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi\\ic_media_stop.png",
+        "source": "D:\\oBian\\oooAndroidStudio\\WeAndYouWei\\MediaRouterSample\\src\\main\\res\\drawable-mdpi\\ic_media_stop.png"
+    },
+    {
+        "merged": "D:\\oBian\\oooAndroidStudio\\WeAndYouWei\\MediaRouterSample\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi\\ic_launcher.png",
+        "source": "D:\\oBian\\oooAndroidStudio\\WeAndYouWei\\MediaRouterSample\\src\\main\\res\\drawable-mdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "D:\\oBian\\oooAndroidStudio\\WeAndYouWei\\MediaRouterSample\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi\\ic_media_pause.png",
+        "source": "D:\\oBian\\oooAndroidStudio\\WeAndYouWei\\MediaRouterSample\\src\\main\\res\\drawable-mdpi\\ic_media_pause.png"
+    },
+    {
+        "merged": "D:\\oBian\\oooAndroidStudio\\WeAndYouWei\\MediaRouterSample\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi\\ic_action_pause.png",
+        "source": "D:\\oBian\\oooAndroidStudio\\WeAndYouWei\\MediaRouterSample\\src\\main\\res\\drawable-mdpi\\ic_action_pause.png"
+    }
+]

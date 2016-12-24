@@ -25,6 +25,8 @@ public class MainActivity extends Activity implements BottomLayout.BottomLayoutO
 
     private Fragment[] oldFragment = new Fragment[5];
     private Faxian  faxian, xiaoxi;
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
